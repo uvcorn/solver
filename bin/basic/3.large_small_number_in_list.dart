@@ -1,11 +1,18 @@
-void main(List<String> args) {
+void main() {
   print('Welcome to Code Solver');
   print('===============');
 
   List<int> numbers = [45, 12, 78, 3, 99, 23, 7];
 
-  int smallest = numbers.reduce((a, b) => a < b ? a : b);
-  int largest = numbers.reduce((a, b) => a > b ? a : b);
+  int smallest = numbers[0];
+  int largest = numbers[0];
 
-  print('Number: $num, Smallest: $smallest, Largest: $largest');
+  for (int i = 0; i < numbers.length; i++) {
+    if (numbers[i] < smallest) {
+      smallest = numbers[i];
+    }
+  }
+  print('Numbers: $numbers');
+  print('Smallest: $smallest');
+  print('Largest: $largest');
 }

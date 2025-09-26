@@ -1,6 +1,6 @@
 import 'dart:io';
 
-void main(List<String> args) {
+void main() {
   print('Welcome to Code Solver');
   print('===============');
 
